@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "e663d6d6-b0a1-4471-bc1b-e13a1d871411",
+		"name": "notification",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38930882"
+	},
+	"item": [
+		{
+			"name": "order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "${{url}}}/",
+					"host": [
+						"${{url}}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"cola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/delete/order",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"delete",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"cola\",\r\n    \"qty\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/edit/order",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"edit",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"ni hao\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/message",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update system",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/update/system",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"update",
+						"system"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
